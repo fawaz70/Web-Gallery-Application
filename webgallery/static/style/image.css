@@ -1,0 +1,86 @@
+.image_box{
+    margin-top:20px;
+    border-radius: 10px;
+    border: 2px #3C3D3F solid;
+    padding:18px 8px 8px 8px;
+    display:flex;
+    flex-direction: column;
+}
+
+.image_box .image_box_title{
+    font-size:20px;
+    font-weight:bold;
+    margin:-20px -10px 20px -10px;
+    padding:10px 0px 10px 25px;
+    color:white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 7px 7px 0px 0px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.new_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+    right: 105px;
+}
+
+.delete-icon{
+    background-image: url('../media/delete-icon.png');
+    width:50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:75%;
+
+}
+
+.delete-image{
+    background-image: url('../media/delete-image.png');
+    width:220px;
+    height: 220px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+/* This section is just to align a few things in HTML */
+#column-align{
+    display: flex;
+    flex-direction: column;
+}
+
+#center-align-delete{
+    position: relative;
+    left: 280px;
+}
+
+#right-align{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#left-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#nextprev-align{
+    position: relative;
+    bottom: 100px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Fawaz's Art Gallary</title>
+    <link href="./style/main.css" rel="stylesheet" type="text/css"/>
+    <link href="./style/upload.css" rel="stylesheet" type="text/css"/>
+    <link href="./style/image.css" rel="stylesheet" type="text/css"/>
+    <link href="./style/comments.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <a href="/" id="title"><b>Fawaz's Art Gallery</b></a>
+        <a href="login.html" id="signin_button" class="button">Sign in or Sign up</a>
+        <a href="/signout/" id="signout_button" class="button">Sign out</a>
+    </header>
+
+    <p id="error_box"></p>
+
+    <!-- This piece of code is for the uploading pictures section -->
+    <button class="showhide" onclick="api.hideUnhide()">Show/Hide</button>
+    <form class="box" id="create_add_photo">
+        <div id="showhide">
+            <div class="column_alignment" action='../uploads/' method="POST">
+                <div class="box_title">Add a Photo</div>
+                <input id="add_title" type="text" class="box_element" placeholder="Enter Image Title" required/>
+                <input id="add_url" type="file" class="box_element" placeholder="Enter Image URL" required/>
+                <button type="submit" class = "button">Post Your Picture</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- This section is used for the add comments block -->
+    <form class="box" class="comment_alignment" id="new_comment">
+        <div class="column_alignment">
+            <div class="box_title">Add a comment?</div>
+            <input id="comment_message" type="text" class="box_element" placeholder="Enter Your Comment" required/>
+            <button type="submit" class="button">Post</button>
+        </div>
+    </form>
+
+    <label class="box_title" class="button"><b>Select user</b>
+        <select id="post_username" class="box_element"></select>
+    </label>
+
+    <!-- This piece of code is for the Image itself as well as adding comments section -->
+    <div id="photo">
+       
+    </div>
+    
+    <!-- This is where comments go -->
+    <div id="messages_list">
+
+    </div>
+    
+    <footer>
+        <a href='./credits.html'>credits</a>
+    </footer>
+    <script src="./js/api.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
