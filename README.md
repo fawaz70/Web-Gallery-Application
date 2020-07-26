@@ -25,3 +25,6 @@ Functions that can be used from the Node.js command prompt:
 9. Signin
 
 10. Signout
+
+
+Instructions and started code given by professor
